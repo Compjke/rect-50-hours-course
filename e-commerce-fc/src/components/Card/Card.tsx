@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Card.module.css";
+import style from "./card.module.css";
 export interface Product {
   id: number;
   img: string;
