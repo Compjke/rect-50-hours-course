@@ -1,0 +1,28 @@
+.productsSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  align-self: self-start;
+  padding: 10px;
+  width: calc(100% - var(--sidebar-width, 300px));
+  margin-left: var(--sidebar-width, 300px);
+}
+
+.emptyMessage {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #62637c;
+  margin-top: 50px;
+  margin-left: var(--sidebar-width, 300px);
+}
+
+@media (max-width: 768px) {
+  .productsSection {
+    margin-left: 0;
+    width: 100%;
+  }
+  .emptyMessage {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}

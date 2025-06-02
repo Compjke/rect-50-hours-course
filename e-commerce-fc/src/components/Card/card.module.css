@@ -1,0 +1,37 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #ffffff;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.cardImage {
+  width: 100%;
+  height: 300px;
+  max-width: 300px;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.cardRating {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: rgb(202, 202, 9);
+}
+
+.cardPrevPrice {
+  text-decoration: line-through;
+  color: #9e9e9e;
+}
+
+.cardPrice {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333333;
+  margin-top: 10px;
+}
