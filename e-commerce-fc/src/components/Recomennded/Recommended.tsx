@@ -20,16 +20,21 @@ export const Recommended = ({
           <button
             key={company}
             className={clsx(style.recommendedButton, {
-              [style.active]: selected?.toLocaleLowerCase() === company?.toLowerCase(),
+              [style.active]:
+                selected?.toString().toLocaleLowerCase() ===
+                company?.toLowerCase(),
             })}
             onClick={onChangeCategory}
           >
             {company}
           </button>
         ))}
-        <button className={clsx(style.recommendedButton, {
-          [style.active]: selected === null,
-        })} onClick={onChangeCategory}>
+        <button
+          className={clsx(style.recommendedButton, {
+            [style.active]: selected === null,
+          })}
+          onClick={onChangeCategory}
+        >
           All
         </button>
       </div>

@@ -1,1 +1,0 @@
-# rect-50-hours-course

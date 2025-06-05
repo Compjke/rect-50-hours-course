@@ -79,7 +79,8 @@ function App() {
           category.toLowerCase() === selected.toString().toLowerCase() ||
           color.toLowerCase() === selected.toString().toLowerCase() ||
           company.toLowerCase() === selected.toString().toLowerCase() ||
-          newPrice.toLowerCase() === selected.toString().toLowerCase()
+          newPrice.toString().toLowerCase() ===
+            selected.toString().toLowerCase()
       );
     }
     return filteredProducts;
@@ -101,7 +102,10 @@ function App() {
         isMobileMenuOpen={isMobileMenuOpen}
       />
       <div className={style.productsWrapper}>
-        <Recommended selected={selectedCategory} onChangeCategory={handleButtonFilterClick} />
+        <Recommended
+          selected={selectedCategory}
+          onChangeCategory={handleButtonFilterClick}
+        />
         <Products
           products={filteredData(products, selectedCategory, query) || []}
         />
