@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+:root{
+    --nav-bar-height: 5rem;
+    --list-marker: url('/img/marker.png');
+    --test-bg : #c5e9c6;
+}
+
