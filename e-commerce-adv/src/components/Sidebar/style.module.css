@@ -1,0 +1,25 @@
+/* Стилизация скроллбара для Webkit (Chrome, Safari) */
+.scrollbar-styled::-webkit-scrollbar {
+  width: 8px; /* Ширина скроллбара */
+  height: 8px; /* Высота для горизонтального скролла (если нужно) */
+}
+
+.scrollbar-styled::-webkit-scrollbar-track {
+  background: #0e531d; /* Цвет фона трека */
+  border-radius: 4px; /* Скругление углов трека */
+}
+
+.scrollbar-styled::-webkit-scrollbar-thumb {
+  background: #af9e9e; /* Цвет ползунка */
+  border-radius: 4px; /* Скругление углов ползунка */
+}
+
+.scrollbar-styled::-webkit-scrollbar-thumb:hover {
+  background: #5c5252; /* Цвет ползунка при наведении */
+}
+
+/* Стили для Firefox */
+.scrollbar-styled {
+  scrollbar-width: thin; /* thin, auto или none */
+  scrollbar-color: #9a8e8e #382136; /* Цвет ползунка и трека */
+}
